@@ -1,0 +1,156 @@
+#bgVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    width: auto;
+    height: auto;
+    z-index: -1;
+    filter: blur(10px); /* Add a blur effect, adjust the value to control the blur intensity */
+    opacity: 0.9; /* Adjust the opacity value (0.0 to 1.0) to control transparency */
+    transition: filter 1.5s, opacity 1.5s; /* Add transitions for a smooth effect */
+}
+
+.container{
+    display:flex;
+    gap:150px;
+    justify-content: center;
+    align-items:center;
+    height: 80vh;
+    margin-bottom: none;
+}
+
+.amorex, .asad {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#amorexpfp{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    transition:0.35s ease-in-out;
+}
+
+#asadpfp{
+    width:300px;
+    height:300px;
+    border-radius: 50%;
+    transition:0.35s ease-in-out;
+}
+
+#amorexpfp:hover{
+    transform: scale(1.05);
+    border-radius: 3.5%;
+    filter:saturate(100%);
+    backdrop-filter: blur(4px);
+    animation: shake 0.5s infinite;
+    animation-delay: 0.47s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+#asadpfp:hover{
+    transform: scale(1.05);
+    border-radius: 3.5%;
+    filter:saturate(100%);
+    backdrop-filter: blue(4px);
+    animation: shake 0.5s infinite;
+    animation-delay: 0.47s;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.texts{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:438px;
+}
+.tnihal{
+    opacity:0;
+    transform:translateY(0);
+    transition: 0.35s ease-in-out;
+}
+.tasad{
+    padding-right:5px;
+    opacity:0;
+    transform:translateY(0);
+    transition: 0.35s ease-in-out;
+}
+.visible{
+    transform:translateY(-20px) scale(1.2);
+    opacity:1;
+}
+
+.cards{
+    display:flex;
+    justify-content: center;
+    gap:165px;
+}
+.amorecardcontent{
+    transition:0.35s ease-in-out;
+    opacity:0;
+    
+    padding:48px;
+    padding-top:2px;
+    padding-bottom:2px;
+    align-items: center;    
+}
+.asadcard{
+    padding-left:69px;
+}
+.asadcardcontent{
+    
+    opacity:0;
+    transition:0.35s ease-in-out;
+    align-items: center;
+    padding:48px;
+    padding-top:2px;
+    padding-bottom:2px;
+    
+}
+.visiblecard{
+    transform:translateY(-20px) scale(1.2);
+    opacity:1;
+    border: solid 1px rgba(0, 0, 0, 0.119);
+    backdrop-filter: blur(29px);
+    border-radius: 9px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+@keyframes shake {
+    0% {
+      transform: translate(0, 0);
+    }
+    10% {
+      transform: translate(5px, -5px);
+    }
+    20% {
+      transform: translate(-5px, 5px);
+    }
+    30% {
+      transform: translate(3px, -3px);
+    }
+    40% {
+      transform: translate(-3px, 3px);
+    }
+    50% {
+      transform: translate(2px, -2px);
+    }
+    60% {
+      transform: translate(-2px, 2px);
+    }
+    70% {
+      transform: translate(1px, -1px);
+    }
+    80% {
+      transform: translate(-1px, 1px);
+    }
+    90% {
+      transform: translate(0, 0);
+    }
+    100% {
+      transform: translate(0, 0);
+    }
+  }
+
