@@ -12,6 +12,10 @@ $(document).ready(function() {
         window.open('https://amorex.github.io/luckgame/');
     })
 })
+window.addEventListener('load', (event) => {
+    
+    document.body.style.opacity = '1';
+});
 $(".img-fluid").on("mouseover", function(){
     var audio=document.getElementById("meow");
     //audio.play();
