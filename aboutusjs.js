@@ -18,6 +18,10 @@ $(document).ready(function() {
         $(".tasad").removeClass("visible");
         $(".asadcardcontent").removeClass("visiblecard");
     });
+    window.addEventListener('load', (event) => {
+    
+        document.body.style.opacity = '1';
+    });
 
 });
 
