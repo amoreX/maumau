@@ -6,13 +6,35 @@
     cursor: pointer;
 }
 .img-fluid {
-    transition: transform 0.5s, box-shadow 0.5s; /* Add transitions for both transform and box-shadow */
-    box-shadow: none; /* Remove the shadow initially */
+    transition: 0.5s; 
+    animation: boing 10s;
 }
 
 .img-fluid:hover {
-    transform: translateY(-100px); /* Move the image 10 pixels up on hover, adjust as needed */
+    transform: translateY(-100px); 
 }
+@keyframes boing {
+    0%{
+        transform:translateX(-120%);
+    }
+    10%{
+        transform:translateX(0%);
+    }
+    40%{
+        transform:translateY(-100px);
+    }
+    60%{
+        transform:translateX(0);
+    }
+    80%{
+        transform:translateX(124%);
+    }
+    100%{
+        transform:translateX(0%);
+    }
+    
+}
+
 
 #bgVideo {
     position: fixed;
@@ -89,4 +111,30 @@
 
 .border-bottom{
     margin-bottom: 0px;padding-bottom: 0px;
+}
+.goodfont{
+    display:flex;
+    justify-content: center;
+    gap:4.3px;
+    cursor:pointer;
+    transition:0.35s ease-in-out;
+
+}
+.nigga{
+    font:3px Instrument Sans, sans-serif;
+    font-size: larger;
+    color:rgb(124, 124, 124);
+    transition:0.25s ease-in-out;
+}
+.nigga:hover{
+    color:rgb(0, 0, 0);
+    transform:translateY(-3px);
+    /* transform:scale(1.1); */
+}
+.goodfont:hover{
+    gap:7px;
+}
+.uwu{
+    font: 700 48px Atkinson Hyperlegible, -apple-system, Roboto, Helvetica, sans-serif;
+    cursor:default;
 }
