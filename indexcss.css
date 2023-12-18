@@ -20,18 +20,34 @@
     10%{
         transform:translateX(0%);
     }
-    40%{
+    20%{
         transform:translateY(-100px);
     }
-    60%{
+    40%{
         transform:translateX(0);
     }
-    80%{
+    60%{
         transform:translateX(124%);
     }
-    100%{
+    80%{
         transform:translateX(0%);
     }
+    85% {
+        transform: rotate(-10deg);
+    }
+    90% {
+        transform: rotate(10deg);
+    }
+    95% {
+        transform: rotate(-5deg);
+    }
+    98% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+
     
 }
 
@@ -124,7 +140,7 @@
     font:3px Instrument Sans, sans-serif;
     font-size: larger;
     color:rgb(124, 124, 124);
-    transition:0.25s ease-in-out;
+    transition:0.16s ease-in-out;
 }
 .nigga:hover{
     color:rgb(0, 0, 0);
