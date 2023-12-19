@@ -154,3 +154,22 @@
     }
   }
 
+.iidk{
+  opacity:0;
+  transition:0.25s ease-in-out;
+}
+.mkc{
+  opacity:1;
+}
+
+#idk{
+  font-size:larger ;
+  font:380 25px Atkinson Hyperlegible, -apple-system, Roboto, Helvetica, sans-serif;
+  position:absolute;
+  display:flex;
+  justify-content: center;
+  height:100vh;
+  width:100%;
+  align-items: center;
+  
+}
