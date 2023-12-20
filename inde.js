@@ -12,7 +12,7 @@ $(document).ready(function() {
         window.location.href = 'https://amorex.github.io/luckgame/';
     })
     $(".niggabutt").on("click", function(){
-        window.location.href='https://n0uchan.github.io/Encoder/';
+        window.location.href='https://n0uchan.github.io/Crypt/';
     })
     $(".niggabut").on("click", function(){
         window.location.href='./aboutus.html';
