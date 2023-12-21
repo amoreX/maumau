@@ -9,7 +9,7 @@ $(document).ready(function() {
         window.location.href='https://amorex.github.io/drumsandstuff/';
     })
     $("#but4").on("click", function(){
-        window.location.href = 'https://amorex.github.io/luckgame/';
+        window.location.href = 'https://n0uchan.github.io/TheMuffinProject/';
     })
     $(".niggabutt").on("click", function(){
         window.location.href='https://n0uchan.github.io/Crypt/';
